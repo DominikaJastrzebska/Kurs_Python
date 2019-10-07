@@ -1,3 +1,5 @@
+#07102019
+
 minutes_7_weeks = 7 * 7 * 24 * 60
 print('7 weeks minutes: ', minutes_7_weeks)
 
