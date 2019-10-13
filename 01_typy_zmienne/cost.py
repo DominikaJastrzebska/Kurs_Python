@@ -7,4 +7,6 @@
 
 distance = int(input('Podaj dystans: '))
 l_per_100 = float(input('Podaj spalanie na 100 km: '))
-price_per_l = float(input('Podaj cene paliwa za 1l: ')) #skonczyc w domu i zrobic zadania
+price_per_l = float(input('Podaj cene paliwa za 1l: '))#skonczyc w domu i zrobic zadania
+koszt_wyprawy = distance * l_per_100/100 * price_per_l
+print('Koszt wyprawy wynosi', koszt_wyprawy, 'zł')

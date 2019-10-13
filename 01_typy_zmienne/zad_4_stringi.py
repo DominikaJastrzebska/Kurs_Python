@@ -11,11 +11,11 @@ author = input('Podaj nazwisko autora: ')
 number_of_pages = input('Podaj liczbe stron: ')
 
 print(title.replace(' ', '').isalpha())
-
-print(author.replace(' ', '').isalpha())
 print(number_of_pages.isnumeric())
-print(title.capitalize())
-print(author.capitalize())
+print(author.replace(' ', '').isalpha())
+
+print(title.title())
+print(author.title()) #czy wszystkie wyrazy maja byc zamienione na duza litere?
 
 book = (title, author, number_of_pages)
 book = ' '.join(book)
