@@ -35,7 +35,7 @@ print('Zmiana explain na understand: ', zmienna_replace)
 zmienna_myslnik = zmienna_this.replace(' ', '-')
 print('Zamiana spacji na myslnik: ', zmienna_myslnik)
 
-zmienna_kropka = zmienna_this.splitlines('')
+zmienna_kropka = zmienna_this.split('.')
 print('Zmiana na linie z kropka: ', zmienna_kropka)
 
 
