@@ -18,10 +18,6 @@ elif number_3 <= number_1 <= number_2:
     num_min = number_3
     num_mid = number_1
     num_max = number_2
-elif number_1 <= number_3 <= number_2:
-    num_min = number_1
-    num_mid = number_3
-    num_max = number_2
 elif number_3 <= number_2 <= number_1:
     num_min = number_3
     num_mid = number_2
