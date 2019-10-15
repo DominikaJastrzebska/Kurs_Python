@@ -28,7 +28,7 @@ if password.isalpha():
     print('Should contain digits too')
 if password.isdigit():
     print('Should contain letters too')
-if  condition_only_lower:
+if condition_only_lower:
     print('Should contain at least one upper')
 print('End')
 
