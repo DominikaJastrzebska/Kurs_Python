@@ -1,3 +1,13 @@
+'''
+6. Przekopiuj zawartość import this do zmiennej.
+>>> import this
+Policz liczbę wystąpień słowa better.
+Usuń z tekstu symbol gwiazdki
+Zamień jedno wystąpienie explain na understand
+Usuń spacje i połącz wszystkie słowa myślnikiem
+Podziel tekst na osobne zdania za pomocą kropki
+'''
+
 import this
 from typing import List
 
