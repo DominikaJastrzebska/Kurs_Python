@@ -1,9 +1,11 @@
-N = int(input('Podaj liczbe naturalna: '))
-if N <=8:
-    i = 0
-    for i in range (1,N):
-        if i == 0:
-            print(str(i)+'!=1')
+N = int(input('Podaj liczbe naturalna w przedziale 0 - 8: '))
+silnia = 1
+if N >= 9 or N <0:
+    print('Nieprawidlowa liczba, podaj liczbe naturalna od 0-8: ')
+else:
+    for i in range(0, N+1):
+        if i > 0:
+            silnia = silnia * i
+            print(str(i)+'! =', silnia)
         else:
-            i = i * i
-            print(str(N)+'!='+str(i))
+            print(str(i)+'! =', 1)
