@@ -1,3 +1,8 @@
+'''
+7. Rozwiń kod bmi.py z pierwszych zajęć dodając teraz instrukcję warunkową, która wyświetli w
+zależności od wyniku: niedowaga / waga normalna / nadwaga / otyłość.
+'''
+
 weight = float(input('Podaj wage w kg: '))
 height = float(input('Podaj wzrost w cm: '))
 

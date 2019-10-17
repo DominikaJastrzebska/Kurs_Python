@@ -1,3 +1,8 @@
+'''
+8. Sortowanie. Trzy dowolne liczby podane przez użytkownika zapisz do trzech zmiennych. Znajdź
+największą liczbę. Wyświetl liczby od największej do najmniejszej.
+'''
+
 number_1 = float(input('Podaj liczbe nr 1: ')) #1 1 2 3 1 3 2
 number_2 = float(input('Podaj liczbe nr 2: ')) #2 3 1 1 3 2 3
 number_3 = float(input('Podaj liczbe nr 3: ')) #3 2 3 2 2 1 1

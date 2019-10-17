@@ -1,3 +1,8 @@
+'''
+4. Napisz program, który wyświetli kolejne wyniki dla silni liczby naturalnej N (N podane przez
+użytkownika, ale nie większe niż 8).
+'''
+
 N = int(input('Podaj liczbe naturalna w przedziale 0 - 8: '))
 silnia = 1
 if N >= 9 or N <0:
