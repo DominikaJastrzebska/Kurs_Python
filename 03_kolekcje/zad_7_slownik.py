@@ -13,7 +13,8 @@ for element in example_list:
         non_duplicte_list.append(element)
 print(non_duplicte_list)
 example_list_to_tuple = tuple(non_duplicte_list)
-
+print('Max: ', max(example_list_to_tuple))
+print('Min: ', min(example_list_to_tuple))
 
 print()
 print('Sposob 2:')
