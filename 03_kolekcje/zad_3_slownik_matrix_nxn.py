@@ -33,7 +33,7 @@ tabl = []
 for row in range(dim_row):
     tabl_row = []
     for col in range(dim_col):
-        tabl_row.append(input('Podaj element {0}, {1} macierzy: '.format(row+1, col+1)))#jak zrobic tutaj indeksacje?
+        tabl_row.append(input('Podaj element {0}, {1} macierzy: '.format(row+1, col+1)))
     tabl.append(tabl_row)
 print(tabl)
 

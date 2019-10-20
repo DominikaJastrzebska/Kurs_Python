@@ -18,7 +18,11 @@ for row in range(len(tabl)):
         if len(str(row * col)) == 2:
             print(tabl[row][col], end=' ' * (int(len(str(row * col))) + 1))
         elif len(str(row * col)) == 1:
-            print(tabl[row][col], end=' ' * (int(len(str(row * col))) + 3)) #odleglosci??
+            print(tabl[row][col], end=' ' * (int(len(str(row * col))) + 2)) #odleglosci??
+print()
+print((len(str(row * col))) + 1)
+print((len(str(row * col))) + 2)
+print()
 
 # print(len(str(10)))
 # print(len(tabl[row]))

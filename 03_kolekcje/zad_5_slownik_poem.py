@@ -37,3 +37,6 @@ for word in poem_list:
     else:
         dict[word.lower()] = 1
 print(dict)
+
+for keys, values in dict.items():
+    print(keys+':', values)
