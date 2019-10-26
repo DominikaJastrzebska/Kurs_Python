@@ -1,0 +1,1 @@
+Gra w zaleznosci od wyboru uzytkownika i losowego wyboru komputera wyswietla historyjke
