@@ -66,7 +66,7 @@ def wizzard(food, wizard_name, location):
 def town_place():
     print(f'{chosen_name} went to the market place and got {quantity_food} {product}')
     print(f'This will be his food for the next {quantity_days} days')
-    if quantity_days >= 15:
+    if quantity_days >= 7:
         print(f"{chosen_name} should walk for 2 days to the forrest in search sth to eat, "
               f"because this isn't enough food to survive")
         forest_place()
