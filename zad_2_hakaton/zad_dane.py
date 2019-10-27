@@ -34,3 +34,4 @@ elif activity.lower() == 'c':
     creating_new_data()
 
 show_data()
+print('lala')

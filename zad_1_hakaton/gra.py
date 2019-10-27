@@ -98,3 +98,4 @@ def try_again():
 
 
 init_game()
+print('lala')
