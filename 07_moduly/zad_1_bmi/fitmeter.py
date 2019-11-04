@@ -1,5 +1,6 @@
 import bmi
 
+
 def advice(filename):
     with open(filename + '.txt') as f:
         content = f.read()

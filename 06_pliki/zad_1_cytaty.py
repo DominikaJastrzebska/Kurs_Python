@@ -14,6 +14,7 @@ import random
 quotes = input('Your file: ')
 with open(quotes, 'r') as fopen:
     lines_quotes = fopen.readlines()
+print(lines_quotes)
 
 quote_of_day = random.choice(lines_quotes).strip()
 quote_of_day = quote_of_day.split('-')

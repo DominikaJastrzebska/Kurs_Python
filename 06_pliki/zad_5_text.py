@@ -10,6 +10,7 @@ word_list = []
 for element in content:
     element = element.replace(',', '').replace('.', '').replace('!', '')
     word_list.append(element)
+    print('Element: ', element)
     #word_list.append(element)
 print(word_list)
 

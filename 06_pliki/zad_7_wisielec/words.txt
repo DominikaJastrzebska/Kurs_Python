@@ -1,0 +1,4 @@
+animals: owca, kon, wielblad, koza, krowa
+fruits: jablko, gruszka, sliwka, ananas, mango
+sport: pilka nozna, koszykowka, siatkowka, rower, plywanie
+names: Sara, John, Sally, Ben, Alice, James

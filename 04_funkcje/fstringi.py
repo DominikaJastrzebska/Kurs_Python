@@ -5,6 +5,7 @@ print("I'm", name, "my favorite color is", fav_color)
 print("I'm {} my favorite color is {}".format(name, fav_color))
 print(f"I'm {name} my favorite color is {fav_color}")
 
+
 def list_my_numbers():
     txt_list = ""
     for i in range(20):

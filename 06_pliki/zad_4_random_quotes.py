@@ -13,6 +13,7 @@ def show(quote_of_day):
     print(('~' + quote_of_day[1]).center(100))
     print(''.center(100, '*'))
 
+
 filename = 'cytaty.txt'
 with open(filename, 'r') as f:
     lines_quotes = f.readlines()
