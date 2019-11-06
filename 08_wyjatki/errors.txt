@@ -1,0 +1,4 @@
+Ha mamy bledy!
+could not convert string to float: ' e'
+could not convert string to float: ' r'
+could not convert string to float: ' t'
