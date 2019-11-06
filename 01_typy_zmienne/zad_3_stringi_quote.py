@@ -14,16 +14,16 @@ Zamień wisdom na słowo friendship
 
 quote = "Honesty is the first chapter in the book of wisdom."
 
-print(len(quote))
-print(quote[-7:-1])
-print(quote[44:50])
-print(quote[0:len(quote)//2])
-print(quote[-1])
-print(quote[50])
-print(quote[len(quote)//2::3])
-print(quote[0:51:2])
-print(quote[::2])
-print(quote[::-1])
-print(quote[-51:-1])
+print('Liczba znakow w napisie:', len(quote))
+print('Wyswietlone slowo wisdom:', quote[-7:-1])
+print('Wyswietlone slowo wisdom:', quote[44:50])
+print('Wyswietlona pierwsza polowa tekstu:', quote[0:len(quote)//2])
+print('Wyswietlona kropka:', quote[-1])
+print('Wyswietlona kropka:', quote[50])
+print('Wyswietlona od polowy co trzecia litera z cytatu:', quote[len(quote)//2::3])
+print('Wyswietla napis: ‘Hnsyi h is hpe ntebo fwso.’:', quote[0:51:2])
+print('Wyswietla napis: ‘Hnsyi h is hpe ntebo fwso.’:', quote[::2])
+print('Wyswietla caly cytat odwrotnie:', quote[::-1])
+# print('Wyswietla caly cytat odwrotnie:', quote[-51:-1])
 
-print(quote.replace('wisdom', 'friendship'))
+print('Zamienia slowo wisdom na friendship:', quote.replace('wisdom', 'friendship'))
