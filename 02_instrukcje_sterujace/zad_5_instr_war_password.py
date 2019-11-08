@@ -22,7 +22,7 @@ Wyświetl różne komunikaty w zależności od rodzaju błędu.
 # print(komunikat)
 
 
-password = input('Gimme password: ' )
+password = input('Gimme password: ')
 alphanum = password.isalnum()
 condition_only_lower = alphanum and password.islower()
 

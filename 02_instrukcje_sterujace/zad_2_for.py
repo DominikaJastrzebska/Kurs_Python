@@ -5,5 +5,5 @@ Poza pętlą umieść pozostałe instrukcje np. “Wrzuć do pierkanika”, “P
 
 pizza = ['maka', 'drozdze', 'woda', 'ser zolty', 'pieczarki', 'oliwki']
 for skladnik in pizza:
-    print(skladnik)
+    print('Dodaj', skladnik)
 print('Wloz do piekarnika, podaj gorace.')
