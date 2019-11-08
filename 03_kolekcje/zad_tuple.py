@@ -10,7 +10,7 @@ numbers = [1, 2, 3, (10, 20), 4, 5]
 #     print(n)
 #     if isinstance(n, tuple):  #type(numbers[n.index()]) is not tuple:
 #         break
-#     counter +=1
+#     counter += 1
 #     print('Wynik', counter)
 #
 # print(type((10, 20)))
@@ -22,5 +22,5 @@ for n in numbers:
     if type(n) is tuple:
     #if type(n) == <class 'tuple'>:  #type(numbers[n.index()]) is not tuple:
         break
-    counter +=1
+    counter += 1
     print('Wynik', counter)

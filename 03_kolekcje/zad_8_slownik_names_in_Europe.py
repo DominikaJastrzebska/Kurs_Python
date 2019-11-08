@@ -7,16 +7,16 @@ Wyświetl tylko te imiona, które wystąpiły conajmniej w 3 krajach.
 '''
 
 names_dict = {
-    'PL':['Ann', 'Sarah', 'Gabriel', 'Olivier', 'Harry', 'George', 'Jacob', 'Sofia', 'Emily', 'Julia'],
-    'EN':['Noah', 'Jake', 'Jacob', 'Ann', 'Sarah', 'Leo', 'Olivier', 'Amelia', 'Emily', 'Olivia'],
-    'DE':['Sarah', 'Oscar', 'Gabriel', 'Leo', 'Harry', 'Margaret', 'Emma', 'Emilia', 'Hannah', 'Marie'],
-    'FL':['Elen', 'Emma', 'Emilia', 'Edith', 'Sofia', 'Elsa', 'Olivier', 'Robert', 'Oscar', 'Henri'],
-    'DK':['Noah', 'Victor', 'Oliver', 'Oscar', 'William', 'Lucas', 'Carl', 'Sofia', 'Elsa', 'Emma'],
-    'FR':['Emma', 'Alice', 'Rose', 'Lea', 'Marie', 'Gabriel', 'Adam', 'Lucas', 'Leo', 'Hugo'],
-    'IT':['Gabriel', 'Leo', 'Rose', 'Lea', 'Marie', 'Sofia', 'Alice', 'Emma', 'Ann', 'Julia'],
-    'LX':['Emma', 'Lara', 'Sarah', 'Emily', 'Sofia', 'Gabriel', 'Leo', 'David', 'Luca', 'Tom'],
-    'MT':['Luca', 'Jacob', 'John', 'Ben', 'Tom', 'Julia', 'Emma', 'Elsa', 'Kate', 'Lea'],
-    'MD':['Sofia', 'Victoria', 'Amelia', 'Andrea', 'David', 'Daniel', 'Gabriel', 'Michael', 'Bogdan', 'Maxim'],
+    'PL': ['Ann', 'Sarah', 'Gabriel', 'Olivier', 'Harry', 'George', 'Jacob', 'Sofia', 'Emily', 'Julia'],
+    'EN': ['Noah', 'Jake', 'Jacob', 'Ann', 'Sarah', 'Leo', 'Olivier', 'Amelia', 'Emily', 'Olivia'],
+    'DE': ['Sarah', 'Oscar', 'Gabriel', 'Leo', 'Harry', 'Margaret', 'Emma', 'Emilia', 'Hannah', 'Marie'],
+    'FL': ['Elen', 'Emma', 'Emilia', 'Edith', 'Sofia', 'Elsa', 'Olivier', 'Robert', 'Oscar', 'Henri'],
+    'DK': ['Noah', 'Victor', 'Oliver', 'Oscar', 'William', 'Lucas', 'Carl', 'Sofia', 'Elsa', 'Emma'],
+    'FR': ['Emma', 'Alice', 'Rose', 'Lea', 'Marie', 'Gabriel', 'Adam', 'Lucas', 'Leo', 'Hugo'],
+    'IT': ['Gabriel', 'Leo', 'Rose', 'Lea', 'Marie', 'Sofia', 'Alice', 'Emma', 'Ann', 'Julia'],
+    'LX': ['Emma', 'Lara', 'Sarah', 'Emily', 'Sofia', 'Gabriel', 'Leo', 'David', 'Luca', 'Tom'],
+    'MT': ['Luca', 'Jacob', 'John', 'Ben', 'Tom', 'Julia', 'Emma', 'Elsa', 'Kate', 'Lea'],
+    'MD': ['Sofia', 'Victoria', 'Amelia', 'Andrea', 'David', 'Daniel', 'Gabriel', 'Michael', 'Bogdan', 'Maxim'],
 }
 
 names_list = []

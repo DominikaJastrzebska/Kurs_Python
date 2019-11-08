@@ -41,6 +41,3 @@ for row in range(len(tabl)):
     print()
     for col in range(len(tabl[row])):
         print(tabl[row][col], end=' ')
-
-
-
