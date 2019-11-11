@@ -12,14 +12,14 @@ Możesz ograniczyć liczbę prób do np. 10.
 
 import random
 
-words = ['company', 'country', 'day', 'eye', 'fact', 'family', 'government', 'group', 'hand', 'home', 'month', 'mother']
-comp_choice = random.choice(words)
-print(comp_choice)
+words = ['company', 'country', 'day', 'eye', 'fact', 'family', 'government',
+         'group', 'hand', 'home', 'month', 'mother']
 
 
 def hangman():
+    comp_choice = random.choice(words)
+    print(comp_choice)
     underscore = []
-
     for letter in comp_choice:
         underscore.append('_')
 

@@ -1,5 +1,5 @@
 def max_of_2(x, y):
-  return x if x > y else y
+    return x if x > y else y
 
 
 def maximum_of(num1, num2, num3):

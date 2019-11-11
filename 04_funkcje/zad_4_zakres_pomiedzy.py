@@ -3,6 +3,7 @@
 zwrócić komunikat: “tak, liczba x znajduje się w zadanym zakresie”, “nie, liczba x jest z poza zakresu”.
 '''
 
+
 def number_in_range(a, b, x):
     if a <= x <= b:
         print('tak, liczba {} znajduje się w zadanym zakresie'.format(x))

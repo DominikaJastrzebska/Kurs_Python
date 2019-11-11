@@ -24,15 +24,14 @@ def rest_from_division(num_list):
             odd_num_list.append(num)
     return even_num_list
 
+
 def show_even(num):
     print('Liczby parzyste: ')
     for numbers in num:
-        print (numbers, end=', ') #JAK ZROBIC ZEBT PRINTOWALO Liczby parzyste: 2, 4, 6
+        print(numbers, end=', ') #JAK ZROBIC ZEBT PRINTOWALO Liczby parzyste: 2, 4, 6
 
 
 nums = append_num_to_list()
 print(nums)
 rest = rest_from_division(nums)
 show_even(rest)
-
-

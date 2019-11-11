@@ -20,6 +20,7 @@ def list_numbers():
     for i in range(20):
         return i
 
+
 print(f'num: {list_numbers()}')
 
 print(f'My numbers: {list_my_numbers()}')

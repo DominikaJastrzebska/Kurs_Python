@@ -4,9 +4,11 @@
 
 import random
 
+
 def main():
     guess_game()
     try_again()
+
 
 def guess_game():
     number = random.randint(0, 100)

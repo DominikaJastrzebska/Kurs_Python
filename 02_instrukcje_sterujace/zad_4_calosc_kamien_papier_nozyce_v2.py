@@ -15,6 +15,7 @@ kamien papier 0 1
 nozyce kamien 0 1
 papier nozyce 0 1
 '''
+
 import random
 
 number_of_rounds = int(input('Podaj liczbe rund: '))

@@ -63,6 +63,7 @@ maximum_of(a, b, c).
 
 # print('Sposob 4'.center(30, '-'))
 
+
 def max_of_2(first, second):
     # max_val = first if first > second else second
     return first if first > second else second
@@ -76,6 +77,7 @@ def maximum_of(a, b, c):
 
 def read_value():
     return int(input('Put integer value: '))
+
 
 x = read_value()
 y = read_value()

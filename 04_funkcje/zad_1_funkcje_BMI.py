@@ -4,8 +4,10 @@ bmi na podstawie danych użytkownika oraz zwracającą odpowiednią wartość
 (niedowaga, waga normalna, nadwaga, otyłość) w zależności od otrzymanego parametru.
 '''
 
+
 def calc_bmi(weight, height):
     return weight / height ** 2
+
 
 def bmi_status(bmi):
     if bmi < 19:
@@ -16,6 +18,7 @@ def bmi_status(bmi):
         print('Nadwaga')
     else:
         print('Otylosc')
+
 
 h = 1.60
 w = 60

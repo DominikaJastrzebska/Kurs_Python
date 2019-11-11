@@ -16,6 +16,7 @@ print('Sposob 1'.center(30,'-'))
 
 print('Sposob 2'.center(30,'-'))
 
+
 def rest_from_division(num):
     return num % 2
 

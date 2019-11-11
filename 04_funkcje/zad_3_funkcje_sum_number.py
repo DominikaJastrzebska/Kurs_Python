@@ -20,6 +20,7 @@
 
 print('Sposob 2'.center(30, '-'))
 
+
 def append_num_to_list():
     num_list = []
     while True:
@@ -30,6 +31,7 @@ def append_num_to_list():
             num_list.append(float(num))
 
     return num_list
+
 
 def add_numbers_2(num_list):
     print(sum(num_list))
