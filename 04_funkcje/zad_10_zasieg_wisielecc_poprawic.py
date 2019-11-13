@@ -16,6 +16,10 @@ words = ['company', 'country', 'day', 'eye', 'fact', 'family', 'government',
          'group', 'hand', 'home', 'month', 'mother']
 
 
+def menu():
+    print('Welcome to hangman game')
+
+
 def hangman():
     comp_choice = random.choice(words)
     print(comp_choice)
@@ -31,6 +35,9 @@ def hangman():
         if user_letter.lower() == 'exit':
             print('Przegrales, slowo do odgadniecia to: ', comp_choice)
             try_to_guess = True
+        elif user_letter.lower() == comp_choice:
+            print('Wygrales, zgadles slowo')
+            break
         else:
             for position, letter in enumerate(comp_choice):
                 if letter == user_letter:
