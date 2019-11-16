@@ -4,4 +4,7 @@
 
 import os
 
+
 # os.st_size
+
+print(os.path.getsize('karty.txt'))

@@ -10,7 +10,7 @@ def square(base):
     return base ** 2
 
 
-def parallelogram(base, height):
+def parallelogram(base, height): # rownoleglobok
     return base * height
 
 
