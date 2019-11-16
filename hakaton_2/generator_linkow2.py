@@ -2,6 +2,7 @@
 
 # https://helion.pl/ksiazki/jak-naprawic-sprzet-elektroniczny-poradnik-dla-nieelektronika-wydanie-ii-michael-jay-geier,janas2.htm#format/d
 
+import write_books_to_file
 
 def is_id_number(partner_id):
     if partner_id.isdigit():
@@ -81,32 +82,69 @@ def get_link():
 
 def another_link():
     question = input('Czy chcesz podac kolejny link? y/n')
-    while True:
-        if question.lower() == 'y':
-            get_link()
-        else:
-            print('Koniec podawania linkow')
+    if question.lower() == 'y':
+        return True
+    else:
+        return False
+
+
+# def main():
+#     domain = 'https://helion.pl'
+#     partner_id = get_partner_num()
+#     link_page = get_link()
+#     if link_page == 'https://helion.pl':
+#         main_page(partner_id, link_page)
+#         print('strona glowna')
+#     elif 'ksiazki' in link_page:
+#         product_page(partner_id, link_page, domain)
+#         'strona ksiazki'
+#     elif 'kategorie' in link_page:
+#         category_page(link_page, domain, partner_id)
+#         print('strona kategorie')
+#     elif 'zakupy' in link_page:
+#         basket_page(link_page, domain, partner_id)
+#         print('strona zakupy')
+#
+#     while True:
+#         # czy chcesz podac t/n
+#         #jesli tak -> wywołaj funkcje
+#         # nie -> break
+#     another_link()
 
 
 def main():
     domain = 'https://helion.pl'
     partner_id = get_partner_num()
-    link_page = get_link()
-    if link_page == 'https://helion.pl':
-        main_page(partner_id, link_page)
-        print('strona glowna')
-    elif 'ksiazki' in link_page:
-        product_page(partner_id, link_page, domain)
-        'strona ksiazki'
-    elif 'kategorie' in link_page:
-        category_page(link_page, domain, partner_id)
-        print('strona kategorie')
-    elif 'zakupy' in link_page:
-        basket_page(link_page, domain, partner_id)
-        print('strona zakupy')
-    another_link()
+
+    while True:
+        link_page = get_link()
+        if link_page == 'https://helion.pl':
+            url = main_page(partner_id, link_page)
+            print('strona glowna', url)
+        elif 'ksiazki' in link_page:
+            url = product_page(partner_id, link_page, domain)
+            print('strona ksiazki', url)
+        elif 'kategorie' in link_page:
+            url = category_page(partner_id, link_page, domain)
+            print('strona kategorie', url)
+        elif 'zakupy' in link_page:
+            url = basket_page(partner_id, link_page, domain)
+            print('strona zakupy', url)
+
+        write_books_to_file.write_links_to_file(partner_id, link_page, domain, url)
+
+        # with open('links.csv', 'a') as f:
+        #     f.writelines(f'\n{link_page}, {url}\n')
+
+        if not another_link():
+            break
+
+    # while True:
+    # # czy chcesz podac t/n
+    # # jesli tak -> wywołaj funkcje
+    # # nie -> break
+    # another_link()
 
 
 if __name__ == '__main__':
     main()
-
