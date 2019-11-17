@@ -4,17 +4,18 @@
 
 import write_books_to_file
 
-def is_id_number(partner_id):
-    if partner_id.isdigit():
-        if len(partner_id) == 5:
-            print('Prawidlowy format')
-        else:
-            print('Podaj dokladnie 5 cyfr')
-    else:
-        print('Podaj tylko cyfry')
+
+# def is_id_number(partner_id):
+#     if partner_id.isdigit():
+#         if len(partner_id) == 5:
+#             print('Prawidlowy format')
+#         else:
+#             print('Podaj dokladnie 5 cyfr')
+#     else:
+#         print('Podaj tylko cyfry')
 
 
-def main_page(number_id, link):
+def transform_main_page_link(number_id, link):
     end_main_page = '/view/' + number_id
     link_new = link.replace(' ', '') + end_main_page
     return link_new
@@ -57,6 +58,7 @@ def basket_page(link, domain, partner_id):
 
 def is_id_number(number):
     if not number.isdigit():
+        print('Podaj same cyfry')
         return False
     else:
         if len(number) != 5:
@@ -118,8 +120,12 @@ def main():
 
     while True:
         link_page = get_link()
-        if link_page == 'https://helion.pl':
-            url = main_page(partner_id, link_page)
+        # if 'helion.pl' in link_page:
+        #     url = main_page(partner_id, link_page)
+        #     print('glowna', url)
+        # url = ''
+        if link_page == 'https://helion.pl ':
+            url = transform_main_page_link(partner_id, link_page)
             print('strona glowna', url)
         elif 'ksiazki' in link_page:
             url = product_page(partner_id, link_page, domain)

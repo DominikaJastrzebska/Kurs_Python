@@ -1,4 +1,10 @@
-Program partnerski portalu helion.pl, ktory przeksztalca podane linki w linki afiliacyjne np.
+Program do obsługi programu partnerskego portalu helion.pl, ktory przeksztalca podane linki z portalu w linki dedykowane.
+Program pobiera od użytkownika unikalny pięciocyfrowy numer partnera oraz link do przekształcenia
 
-link podany przez uzytkownika: https://helion.pl/ksiazki/algorytmy-ilustrowany-przewodnik-aditya-bhargava,algoip.htm#format/d
+- Strona główna:
+link podany przez użytkownika: https://helion.pl
+link przekształcony: 
+
+- Strona produktu - książki
+link podany przez uzytkownika: https://helion.pl/ksiazki/algorytmy-ilustrowany-przewodnik-aditya-bhargava,algoip.htm#format/d  <br/>
 link przeksztalcony: https://helion.pl/view/12345/algoip

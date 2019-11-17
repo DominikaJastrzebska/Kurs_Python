@@ -1,0 +1,8 @@
+strona glowna
+wejscie: https://helion.pl
+wyjscie:
+
+strona produktu - ksiazki
+wejscie: https://helion.pl/ksiazki/algorytmy-data-science-siedmiodniowy-przewodnik-wydanie-ii-david-natingga,aldas2.htm#format/d
+wyjscie: https://helion.pl/view/12345/aldas2
+
