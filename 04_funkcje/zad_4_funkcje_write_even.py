@@ -3,6 +3,7 @@
  (wykorzystać funkcje z pkt 2)
 '''
 
+
 def append_num_to_list():
     num_list = []
     while True:
