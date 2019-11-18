@@ -5,16 +5,6 @@
 import write_books_to_file
 
 
-# def is_id_number(partner_id):
-#     if partner_id.isdigit():
-#         if len(partner_id) == 5:
-#             print('Prawidlowy format')
-#         else:
-#             print('Podaj dokladnie 5 cyfr')
-#     else:
-#         print('Podaj tylko cyfry')
-
-
 def transform_main_page_link(number_id, link):
     end_main_page = '/view/' + number_id
     link_new = link.replace(' ', '') + end_main_page
