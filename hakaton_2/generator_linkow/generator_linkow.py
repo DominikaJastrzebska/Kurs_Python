@@ -39,19 +39,23 @@ def get_ident(link):
     return ident
 
 
-def product_page(partner_id, link, domain):
+def transform_product_page(partner_id, link, domain):
     ident = get_ident(link)
     link_new = domain + '/view/' + partner_id + '/' + ident
     return link_new
 
 
-def category_page(link, domain, partner_id):
-    end_category = '/kategorie/programowanie'
-    link_new = domain + '/page/' + partner_id + end_category
+def transform_category_page(partner_id, link, domain):
+    components = split_links(link)
+    end_category = ''
+    for index, element in enumerate(components):
+        if components[index] == 'kategorie':
+            end_category = '/page/' + components[index] + '/' + components[index + 1]
+    link_new = domain + '/' + partner_id + end_category
     return link_new
 
 
-def basket_page(link, domain, partner_id):
+def transform_basket_page(partner_id, link, domain):
     link_new = domain + '/add/' + partner_id
     return link_new
 
@@ -70,7 +74,7 @@ def is_id_number(number):
 
 def get_partner_num():
     while True:
-        partner_id = input('Podaj swoj numer id:')
+        partner_id = input('Podaj swoj numer id: ')
         if is_id_number(partner_id):
             break
 
@@ -83,7 +87,7 @@ def get_link():
 
 
 def another_link():
-    question = input('Czy chcesz podac kolejny link? y/n')
+    question = input('Czy chcesz podac kolejny link? y/n ')
     if question.lower() == 'y':
         return True
     else:
@@ -126,21 +130,21 @@ def main():
         # url = ''
         if link_page == 'https://helion.pl ':
             url = transform_main_page_link(partner_id, link_page)
-            print('strona glowna', url)
-        elif 'ksiazki' in link_page:
-            url = product_page(partner_id, link_page, domain)
-            print('strona ksiazki', url)
+            print('Strona główna', url)
+        elif 'ksiazki' in link_page and 'kategorie' not in link_page:
+            url = transform_product_page(partner_id, link_page, domain)
+            print('Strona produktu - ksiazki', url)
         elif 'kategorie' in link_page:
-            url = category_page(partner_id, link_page, domain)
-            print('strona kategorie', url)
+            url = transform_category_page(partner_id, link_page, domain)
+            print('Strona kategorie', url)
         elif 'zakupy' in link_page:
-            url = basket_page(partner_id, link_page, domain)
-            print('strona zakupy', url)
+            url = transform_basket_page(partner_id, link_page, domain)
+            print('Strona zakupy', url)
 
         write_books_to_file.write_links_to_file(partner_id, link_page, domain, url)
 
         # with open('links.csv', 'a') as f:
-        #     f.writelines(f'\n{link_page}, {url}\n')
+        #     f.writelines(f'\n{link_page}, {url}')
 
         if not another_link():
             break

@@ -9,5 +9,5 @@
 
 def write_links_to_file(partner_id, link_page, domain, url):
     with open('links.csv', 'a') as f:
-        f.writelines(f'\n{link_page}, {url}\n')
+        f.writelines(f'\n{link_page}, {url}')
 
