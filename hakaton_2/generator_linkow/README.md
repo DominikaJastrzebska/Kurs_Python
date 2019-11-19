@@ -17,5 +17,8 @@ link podany przez użytkownika: https://helion.pl/kategorie/ksiazki/programowani
 link przekształcony: https://helion.pl/12345/page/kategorie/programowanie
 
 #### - Strona zakupów
-link podany przez użytkownika: https://helion.pl/zakupy/edit.cgi
+link podany przez użytkownika: https://helion.pl/zakupy/edit.cgi  
 link przekształcony: https://helion.pl/add/12345
+
+#### Technologie
+Python 3.7
