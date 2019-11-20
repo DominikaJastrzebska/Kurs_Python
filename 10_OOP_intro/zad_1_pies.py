@@ -9,7 +9,7 @@ class Dog:
         self.color = color
 
     def bark(self):
-        return 'Hau ' * random.randint(10)
+        return 'Hau ' * random.randint(1, 10)
 
     def wag_tail(self):
         tail = ['~', '`', '^', '&']
@@ -21,3 +21,4 @@ obj_scania = Dog('Scania', 'alaskan malamut', 'grey - white')
 
 print(obj_fela.name)
 print(obj_fela.wag_tail())
+print(obj_fela.bark())
