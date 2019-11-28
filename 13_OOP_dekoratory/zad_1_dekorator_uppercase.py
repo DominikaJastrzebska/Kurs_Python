@@ -5,9 +5,13 @@ def uppercase_decorator(func_text):
         return text
     return upper_text
 
+
 @uppercase_decorator
 def text_giver():
     return 'Zwracam text'
 
 
 print(text_giver())
+
+uppercased_text = uppercase_decorator(text_giver)
+print(uppercased_text())

@@ -1,0 +1,2 @@
+def timepassed(func):
+    pass
