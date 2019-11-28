@@ -13,7 +13,7 @@ class Fifo:
     def show(self):
         print(self.elements)
 
-    def __str__(self):   # ladnie wyswietlone, wyprintowane
+    def __str__(self):   # ladnie wyswietlone, wyprintowane napisuje printowanie
         return ','.join(self.elements)
 
     def get(self):
