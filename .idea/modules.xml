@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Blackjack/.idea/Blackjack.iml" filepath="$PROJECT_DIR$/../Blackjack/.idea/Blackjack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kurs_Python.iml" filepath="$PROJECT_DIR$/.idea/Kurs_Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Kurs_Python_examples/.idea/Kurs_Python_examples.iml" filepath="$PROJECT_DIR$/../Kurs_Python_examples/.idea/Kurs_Python_examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../api/.idea/api.iml" filepath="$PROJECT_DIR$/../api/.idea/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../api_meals/.idea/api_meals.iml" filepath="$PROJECT_DIR$/../api_meals/.idea/api_meals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../meals_api/.idea/meals_api.iml" filepath="$PROJECT_DIR$/../meals_api/.idea/meals_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../project_shoplist_1.0/.idea/project_shoplist_1.0.iml" filepath="$PROJECT_DIR$/../project_shoplist_1.0/.idea/project_shoplist_1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../strategia_rpg/.idea/strategia_rpg.iml" filepath="$PROJECT_DIR$/../strategia_rpg/.idea/strategia_rpg.iml" />
+    </modules>
+  </component>
+</project>
