@@ -39,4 +39,4 @@ for word in poem_list:
 print(dict)
 
 for keys, values in dict.items():
-    print(keys+':', values)
+    print(keys + ':', values)
