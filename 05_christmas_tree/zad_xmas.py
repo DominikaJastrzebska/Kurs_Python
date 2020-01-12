@@ -10,4 +10,3 @@ def print_triangle(n):
 
 for i in range(2, 5):
     print_triangle(i)
-
