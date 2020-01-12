@@ -11,7 +11,7 @@ Podziel tekst na osobne zdania za pomocą kropki
 import this
 from typing import List
 
-zmienna_this = '''
+var_this = '''
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -33,19 +33,19 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 '''
 
-quantity = zmienna_this.count('better')
+quantity = var_this.count('better')
 print('Liczba wystapien slowa "better" to: ', quantity)
 
-zmienna_this_without_star = zmienna_this.replace('*', '')
+zmienna_this_without_star = var_this.replace('*', '')
 print('Import this bez gwiazdki: ', zmienna_this_without_star)
 
-zmienna_replace = zmienna_this.replace('explain', 'understand', 1)
+zmienna_replace = var_this.replace('explain', 'understand', 1)
 print('Zmiana explain na understand: ', zmienna_replace)
 
-zmienna_myslnik = zmienna_this.replace(' ', '-')
+zmienna_myslnik = var_this.replace(' ', '-')
 print('Zamiana spacji na myslnik: ', zmienna_myslnik)
 
-zmienna_kropka = zmienna_this.split('.')
+zmienna_kropka = var_this.split('.')
 print('Zmiana na linie z kropka: ', zmienna_kropka)
 
 
