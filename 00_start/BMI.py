@@ -1,4 +1,4 @@
-#07102019
+# 07102019
 
 name = input('Podaj swoje imie: ')
 weight = float(input('Podaj wage: '))
