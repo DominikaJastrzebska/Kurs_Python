@@ -57,5 +57,3 @@ if __name__ == '__main__':
 
     print(FLAMES[number % 5])
 
-# FLAMES = {1: 'Friends', 2: 'Lovers', 3: 'Affection', 4: 'Marriage', 0: 'Enemies'}
-# print(FLAMES[1])
