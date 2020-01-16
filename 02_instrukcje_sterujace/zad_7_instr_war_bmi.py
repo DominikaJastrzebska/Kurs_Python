@@ -10,13 +10,14 @@ BMI = weight/(height/100)**2
 print(round(BMI,2))
 
 if BMI < 20:
-    komunikat = 'niedowaga'
-elif 20<= BMI <=25:
-    komunikat = 'waga w normie'
-elif 25 <BMI <=29:
-    komunikat = 'lekka nadwaga'
-elif 29 < BMI <=37:
-    komunikat = 'nadwaga'
+    infrmation = 'niedowaga'
+elif 20 <= BMI <= 25:
+    information = 'waga w normie'
+elif 25 < BMI <= 29:
+    information = 'lekka nadwaga'
+elif 29 < BMI <= 37:
+    information = 'nadwaga'
 else:
-    komunikat = 'otylosc'
-print('Twoje BMI wynosi', str(round(BMI, 2)) + ', diagnoza:', komunikat)
+    information = 'otylosc'
+
+print('Twoje BMI wynosi', str(round(BMI, 2)) + ', diagnoza:', information)

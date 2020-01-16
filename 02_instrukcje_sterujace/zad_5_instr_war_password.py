@@ -26,7 +26,7 @@ password = input('Gimme password: ')
 alphanum = password.isalnum()
 condition_only_lower = alphanum and password.islower()
 
-if len(password) <8:
+if len(password) < 8:
     print('Password is too short. Should be 8 chars')
 if not alphanum:
     print('Your pass should be alphanumeric')
@@ -36,5 +36,5 @@ if password.isdigit():
     print('Should contain letters too')
 if condition_only_lower:
     print('Should contain at least one upper')
-print('End')
 
+print('End')

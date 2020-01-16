@@ -4,13 +4,14 @@ znaków oraz czy zawiera literę a. Jeśli zawiera, wszystkie litery a podmień 
 napis.
 '''
 
-zmienna = input('Podaj dowolna zmienna: ')
-if len(zmienna) > 5:
+sentence = input('Podaj dowolna zmienna: ')
+if len(sentence) > 5:
     print('Zmienna jest dluzsza od 5.')
 else:
     print('Zmienna jest krótsza niz 5.')
-if 'a' in zmienna:
-    zmienna = zmienna.replace('a', 'z')
+if 'a' in sentence:
+    sentence = sentence.replace('a', 'z')
 else:
     print('Zmienna nie zawiera litery a.')
-print(zmienna)
+
+print(sentence)

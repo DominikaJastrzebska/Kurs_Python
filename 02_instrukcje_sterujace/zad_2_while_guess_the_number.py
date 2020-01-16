@@ -8,10 +8,11 @@ hidden_number = 37
 while True:
     user_number = int(input('Podaj liczbe w przedziale od 1 do 100: '))
     if user_number == hidden_number:
-        komunikat = 'Gratulacje'
+        message = 'Gratulacje'
         break
     else:
-        komunikat = 'Pudlo, zdaguj dalej'
-        print(komunikat)
+        message = 'Pudlo, zdaguj dalej'
+        print(message)
         continue
-print(komunikat)
+
+print(message)

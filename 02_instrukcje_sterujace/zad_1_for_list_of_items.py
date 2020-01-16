@@ -3,7 +3,9 @@
 spakowanego przedmiotu, po ostatnim przedmiocie pokaż informację: “Great, we are ready!”
 '''
 
-lista_przedmiotow = ['buty', 'kurtka', 'czapka', 'plecak', 'latarka']
-for przedmiot in lista_przedmiotow:
-    print(przedmiot)
+list_of_items = ['buty', 'kurtka', 'czapka', 'plecak', 'latarka']
+
+for item in list_of_items:
+    print(item)
+
 print('Great, we are ready')

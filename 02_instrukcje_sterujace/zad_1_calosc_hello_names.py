@@ -3,7 +3,7 @@
 przecinkiem lub białym znakiem). Następnie powitaj każdą osobę na liście.
 '''
 
-ciag_imion = input('Podaj imiona oddzielone przecinkiem: ')
-lista_imion = ciag_imion.split(',')
-for imie in lista_imion:
-    print('Hello', imie.title() +'!')
+names = input('Podaj imiona oddzielone przecinkiem: ')
+list_of_names = names.split(',')
+for name in list_of_names:
+    print('Hello', name.title() + '!')

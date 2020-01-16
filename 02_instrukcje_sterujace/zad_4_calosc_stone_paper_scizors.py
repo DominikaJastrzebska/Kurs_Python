@@ -20,7 +20,7 @@ import random
 while True:
     user_choice = input('Podaj jedna z figur: kamien/papier/nozyce ')
     comp_choice = random.choice(['kamien', 'papier', 'nozyce'])
-    print(comp_choice)
+    print('Komputer:', comp_choice)
 
     if user_choice.lower() == comp_choice.lower():
         print('Remis')

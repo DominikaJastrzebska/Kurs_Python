@@ -14,4 +14,5 @@ while True:
         komunikat = 'Pudlo, zdaguj dalej'
         print(komunikat)
         continue
+
 print(komunikat)
