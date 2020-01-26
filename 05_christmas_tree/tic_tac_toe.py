@@ -123,6 +123,8 @@ def same_elements_in_diagonal(matrix):
         return list_true_false_main_diag
     elif len(set(anti_true_false)) == 1:
         return list_true_false_anti_diag
+    else:
+        return [(0, False, '.'), (0, False, '.'), (0, False, '.')]
 
 
 def who_wins_row_col(list_of_true_false):
@@ -132,12 +134,18 @@ def who_wins_row_col(list_of_true_false):
     :return: string 'X' or 'O'
     """
     for element in list_of_true_false:
-        print('list true false', list_of_true_false)
         if element[1] is True:
             if element[2] != '.':
                 return element[2]
             # else:
             #     continue
+
+
+def play_again():
+    question = input('Do You want to play again? y/n')
+    play = 'y'
+    if play.lower() == 'y':
+        main()
 
 
 def main():
@@ -168,32 +176,19 @@ def main():
             print(matrix_board_3x3)
             same_el_rows = same_elements_in_row(matrix_board_3x3)
             same_el_col = same_elements_in_col(matrix_board_3x3)
-            # same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
-            print('Who wins row')
-            print((who_wins_row_col(same_el_rows)))
-            print('who wins col')
-            print((who_wins_row_col(same_el_col)))
-            print('who wins diag')
-            # print((who_wins_row_col(same_el_diag)))
-            print('stop who wins')
+            same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
+
             if who_wins_row_col(same_el_rows) is not None:
                 print('And the winner is:', who_wins_row_col(same_el_rows))
                 break
             elif who_wins_row_col(same_el_col) is not None:
                 print('And the winner is:', who_wins_row_col(same_el_col))
                 break
-            # elif who_wins_row_col(same_el_diag) is not None:
-            #     print('And the winner is:', who_wins_row_col(same_el_diag))
+            elif who_wins_row_col(same_el_diag) is not None:
+                print('And the winner is:', who_wins_row_col(same_el_diag))
                 break
 
-    print()
-    matrix_example = [['X', '.', 'X'], ['.', '.', '.'], ['O', 'O', 'O']]
-    print(matrix_example)
-    same_elements_row = same_elements_in_row(matrix_board_3x3)
-    print(same_elements_in_row(matrix_example))
-    print(change_rows_to_col(matrix_example))
-    print('matrix board 3x3', matrix_board_3x3)
-    who_wins_row_col(matrix_board_3x3)
+    play_again()
 
 
 if __name__ == '__main__':

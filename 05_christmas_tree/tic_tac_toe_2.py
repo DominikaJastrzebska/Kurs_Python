@@ -155,15 +155,18 @@ def same_elements_in_diagonal(matrix):
         return list_true_false_main_diag
     elif len(set(anti_true_false)) == 1:
         return list_true_false_anti_diag
+    else:
+        return [(0, False, '.'), (0, False, '.'), (0, False, '.')]
 
 
 def main():
-    matrix_board_3x3 = [['X', 'O', 'O'], ['.', '.', '.'], ['O', 'O', 'X']]
+    matrix_board_3x3 = [['X', '.', 'O'], ['.', '.', '.'], ['O', 'O', 'X']]
     for row in range(3):
         print(matrix_board_3x3[row])
     same_el_row = same_elements_in_row(matrix_board_3x3)
+    # same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
     print(same_el_row)
-    print(who_wins_row_col(same_el_row))
+    # print(who_wins_row_col(same_el_diag))
     # same_el_col = same_elements_in_col(matrix_board_3x3)
     # print(same_el_col)
     # print(who_wins_row_col(same_el_col))
