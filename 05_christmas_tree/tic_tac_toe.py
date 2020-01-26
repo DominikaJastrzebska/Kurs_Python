@@ -67,20 +67,6 @@ def same_elements_in_row(matrix):
     return list_of_true_false
 
 
-def who_wins_row_col(list_of_true_false):
-    """
-    Function returns element, that won the game
-    :param list_of_true_false:
-    :return: string 'X' or 'O'
-    """
-    for element in list_of_true_false:
-        if element[1] is True:
-            if element[2] != '.':
-                return element[2]
-            else:
-                continue
-
-
 def change_rows_to_col(matrix):
     """
     Function changes rows to columns in matrix 3x3
@@ -113,6 +99,46 @@ def same_elements_in_col(matrix):
     return same_elements_in_row(matrix_change)
 
 
+def same_elements_in_diagonal(matrix):
+    """
+    Function checks if in main diagonal or in antidiagonal the elements are the same
+    :param matrix: matrix 3x3
+    :return: list (number of row, True or False, element in diagonal)
+    """
+    list_true_false_main_diag = []
+    list_true_false_anti_diag = []
+
+    for row in range(3):
+        list_true_false_main_diag.append((row, all(x == matrix[0][0] for x in matrix[row][row]), matrix[row][row]))
+        list_true_false_anti_diag.append(
+            (row, all(x == matrix[2][0] for x in matrix[row][3 - 1 - row]), matrix[row][3 - 1 - row]))
+
+    main_true_false = []
+    anti_true_false = []
+    for element in range(3):
+        main_true_false.append(list_true_false_main_diag[element][1])
+        anti_true_false.append(list_true_false_anti_diag[element][1])
+
+    if len(set(main_true_false)) == 1:
+        return list_true_false_main_diag
+    elif len(set(anti_true_false)) == 1:
+        return list_true_false_anti_diag
+
+
+def who_wins_row_col(list_of_true_false):
+    """
+    Function returns element, that won the game
+    :param list_of_true_false:
+    :return: string 'X' or 'O'
+    """
+    for element in list_of_true_false:
+        if element[1] is True:
+            if element[2] != '.':
+                return element[2]
+            else:
+                continue
+
+
 def main():
     dict_row = {'A': 1, 'B': 2, 'C': 3}
 
@@ -141,11 +167,15 @@ def main():
             print(matrix_board_3x3)
             same_el_rows = same_elements_in_row(matrix_board_3x3)
             same_el_col = same_elements_in_col(matrix_board_3x3)
+            same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
             if who_wins_row_col(same_el_rows) is not None:
                 print('And the winner is:', who_wins_row_col(same_el_rows))
                 break
             elif who_wins_row_col(same_el_col) is not None:
                 print('And the winner is:', who_wins_row_col(same_el_col))
+                break
+            elif who_wins_row_col(same_el_diag) is not None:
+                print('And the winner is:', who_wins_row_col(same_el_diag))
                 break
 
     print()
