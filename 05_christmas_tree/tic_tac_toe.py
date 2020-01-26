@@ -132,11 +132,12 @@ def who_wins_row_col(list_of_true_false):
     :return: string 'X' or 'O'
     """
     for element in list_of_true_false:
+        print('list true false', list_of_true_false)
         if element[1] is True:
             if element[2] != '.':
                 return element[2]
-            else:
-                continue
+            # else:
+            #     continue
 
 
 def main():
@@ -167,15 +168,22 @@ def main():
             print(matrix_board_3x3)
             same_el_rows = same_elements_in_row(matrix_board_3x3)
             same_el_col = same_elements_in_col(matrix_board_3x3)
-            same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
+            # same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
+            print('Who wins row')
+            print((who_wins_row_col(same_el_rows)))
+            print('who wins col')
+            print((who_wins_row_col(same_el_col)))
+            print('who wins diag')
+            # print((who_wins_row_col(same_el_diag)))
+            print('stop who wins')
             if who_wins_row_col(same_el_rows) is not None:
                 print('And the winner is:', who_wins_row_col(same_el_rows))
                 break
             elif who_wins_row_col(same_el_col) is not None:
                 print('And the winner is:', who_wins_row_col(same_el_col))
                 break
-            elif who_wins_row_col(same_el_diag) is not None:
-                print('And the winner is:', who_wins_row_col(same_el_diag))
+            # elif who_wins_row_col(same_el_diag) is not None:
+            #     print('And the winner is:', who_wins_row_col(same_el_diag))
                 break
 
     print()
