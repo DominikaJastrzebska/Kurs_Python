@@ -7,20 +7,20 @@ Stwórz gre w kółko i Krzyżyk dla 2 graczy. Zacznij od najważniejszej częś
 Przykładowa gra mogłaby wyglądać ten sposób:
 '''
 
-game_board = {
-    'A1': '.', 'A2': '.', 'A3': '.',
-    'B1': '.', 'B2': '.', 'B3': '.',
-    'C1': '.', 'C2': '.', 'C3': '.'
-}
+# game_board = {
+#     'A1': '.', 'A2': '.', 'A3': '.',
+#     'B1': '.', 'B2': '.', 'B3': '.',
+#     'C1': '.', 'C2': '.', 'C3': '.'
+# }
+#
+# matrix_board = [
+#     [' ', 'A ', ' B ', ' C'],
+#     [1, '.', '.', '.', ],
+#     [2, '.', '.', '.', ],
+#     [3, '.', '.', '.', ]
+# ]
 
-matrix_board = [
-    [' ', 'A ', ' B ', ' C'],
-    [1, '.', '.', '.', ],
-    [2, '.', '.', '.', ],
-    [3, '.', '.', '.', ]
-]
-
-dict_row = {'A': 1, 'B': 2, 'C': 3}
+# dict_row = {'A': 1, 'B': 2, 'C': 3}
 
 
 def print_game_board(matrix_board):
@@ -142,13 +142,26 @@ def who_wins_row_col(list_of_true_false):
 
 
 def play_again():
-    question = input('Do You want to play again? y/n')
+    question = input('Do You want to play again? y/n ')
     play = 'y'
     if play.lower() == 'y':
         main()
 
 
 def main():
+    game_board = {
+        'A1': '.', 'A2': '.', 'A3': '.',
+        'B1': '.', 'B2': '.', 'B3': '.',
+        'C1': '.', 'C2': '.', 'C3': '.'
+    }
+
+    matrix_board = [
+        [' ', 'A ', ' B ', ' C'],
+        [1, '.', '.', '.', ],
+        [2, '.', '.', '.', ],
+        [3, '.', '.', '.', ]
+    ]
+
     dict_row = {'A': 1, 'B': 2, 'C': 3}
 
     print('Print game board')
