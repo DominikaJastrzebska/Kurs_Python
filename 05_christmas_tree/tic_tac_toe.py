@@ -7,21 +7,6 @@ Stwórz gre w kółko i Krzyżyk dla 2 graczy. Zacznij od najważniejszej częś
 Przykładowa gra mogłaby wyglądać ten sposób:
 '''
 
-# game_board = {
-#     'A1': '.', 'A2': '.', 'A3': '.',
-#     'B1': '.', 'B2': '.', 'B3': '.',
-#     'C1': '.', 'C2': '.', 'C3': '.'
-# }
-#
-# matrix_board = [
-#     [' ', 'A ', ' B ', ' C'],
-#     [1, '.', '.', '.', ],
-#     [2, '.', '.', '.', ],
-#     [3, '.', '.', '.', ]
-# ]
-
-# dict_row = {'A': 1, 'B': 2, 'C': 3}
-
 
 def print_game_board(matrix_board):
     """
@@ -143,17 +128,18 @@ def who_wins_row_col(list_of_true_false):
 
 def play_again():
     question = input('Do You want to play again? y/n ')
-    play = 'y'
-    if play.lower() == 'y':
+    if question.lower() == 'y':
         main()
+    else:
+        exit()
 
 
 def main():
-    game_board = {
-        'A1': '.', 'A2': '.', 'A3': '.',
-        'B1': '.', 'B2': '.', 'B3': '.',
-        'C1': '.', 'C2': '.', 'C3': '.'
-    }
+    # game_board = {
+    #     'A1': '.', 'A2': '.', 'A3': '.',
+    #     'B1': '.', 'B2': '.', 'B3': '.',
+    #     'C1': '.', 'C2': '.', 'C3': '.'
+    # }
 
     matrix_board = [
         [' ', 'A ', ' B ', ' C'],
@@ -170,36 +156,45 @@ def main():
     matrix_board_3x3 = create_matrix_board_3x3(matrix_board)
 
     turn = 'X'
-    while '.' in game_board.values():
-        print()
-        move = input(f'Player {turn} mark position: ')
-        if game_board[move] != '.':
-        # if matrix_board_3x3[int(move[1])][dict_row[move[0]]] != '.':
-            print('Put the mark on the other position.')
-        else:
-            game_board[move] = turn
-            matrix_board[int(move[1])][dict_row[move[0]]] = turn
-            if turn == 'X':
-                turn = 'O'
-            else:
-                turn = 'X'
-            print('print_game_board: ')
-            print_game_board(matrix_board)
-            matrix_board_3x3 = create_matrix_board_3x3(matrix_board)
-            print(matrix_board_3x3)
-            same_el_rows = same_elements_in_row(matrix_board_3x3)
-            same_el_col = same_elements_in_col(matrix_board_3x3)
-            same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
 
-            if who_wins_row_col(same_el_rows) is not None:
-                print('And the winner is:', who_wins_row_col(same_el_rows))
-                break
-            elif who_wins_row_col(same_el_col) is not None:
-                print('And the winner is:', who_wins_row_col(same_el_col))
-                break
-            elif who_wins_row_col(same_el_diag) is not None:
-                print('And the winner is:', who_wins_row_col(same_el_diag))
-                break
+    # while '.' in game_board.values():
+    matrix_board_3x3_flatten = [el for row in matrix_board_3x3 for el in row]
+    while '.' in matrix_board_3x3_flatten:
+        print()
+
+        try:
+            move = input(f'Player {turn} mark position: ').title()
+
+                # print('Only combination of "A"')
+            # if game_board[move] != '.':
+            if matrix_board[int(move[1])][dict_row[move[0]]] != '.':
+                print('Put the mark on the other position.')
+            else:
+                # game_board[move] = turn
+                matrix_board[int(move[1])][dict_row[move[0]]] = turn
+                if turn == 'X':
+                    turn = 'O'
+                else:
+                    turn = 'X'
+                print('print_game_board: ')
+                print_game_board(matrix_board)
+                matrix_board_3x3 = create_matrix_board_3x3(matrix_board)
+                print(matrix_board_3x3)
+                same_el_rows = same_elements_in_row(matrix_board_3x3)
+                same_el_col = same_elements_in_col(matrix_board_3x3)
+                same_el_diag = same_elements_in_diagonal(matrix_board_3x3)
+
+                if who_wins_row_col(same_el_rows) is not None:
+                    print('And the winner is:', who_wins_row_col(same_el_rows))
+                    break
+                elif who_wins_row_col(same_el_col) is not None:
+                    print('And the winner is:', who_wins_row_col(same_el_col))
+                    break
+                elif who_wins_row_col(same_el_diag) is not None:
+                    print('And the winner is:', who_wins_row_col(same_el_diag))
+                    break
+        except (ValueError, KeyError, IndexError) as e:
+            print("Only combination of 'A', 'B', 'C' and 1, 2, 3, for example 'A1' is acceptable")
 
     play_again()
 

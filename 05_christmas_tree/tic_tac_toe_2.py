@@ -172,6 +172,15 @@ def main():
     # print(who_wins_row_col(same_el_col))
     # print(same_elements_in_diagonal(matrix_board_3x3))
     # same_elements_in_diagonal(matrix_board_3x3)
+    # for i in range(3):
+    #     while '.' in matrix_board_3x3[i]:
+    #         print('lA')
+
+    matrix_flatten = [el for row in matrix_board_3x3 for el in row]
+    print(matrix_flatten)
+
+    print('a1'.title())
+
 
 
 if __name__ == '__main__':
