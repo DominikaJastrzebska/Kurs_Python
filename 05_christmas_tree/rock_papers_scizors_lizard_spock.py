@@ -125,7 +125,7 @@ def get_statistic():
     u = statistic.count('U')
     r = statistic.count('R')
     round_number = statistic.count('round_number')
-    print('komputer -', k,',', 'uzytkownik -', u,',', 'remis - ', r,',', 'liczba rund -', round_number + 1)
+    print('komputer -', k, ',', 'uzytkownik -', u, ',', 'remis - ', r, ',', 'liczba rund -', round_number + 1)
 
 
 # for i in statistic:
