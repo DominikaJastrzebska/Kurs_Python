@@ -143,5 +143,3 @@ main()
 # comp_choice, user_choice = figure_choose()
 # who_wins(comp_choice, user_choice)
 play_again()
-
-
