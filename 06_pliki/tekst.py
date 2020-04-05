@@ -19,14 +19,14 @@ filename = 'text.txt'
 #             break
 #         print(current_line)
 
-# with open ('text.txt', 'r') as fopen:
-#     list_of_lines = fopen.readlines()
-# print(list_of_lines)
-# print('--------------------------')
-#
-# #operuje juz tylko na zwyklej liscie
-# for i in range(len(list_of_lines)):
-#     print(f'Linia {i}:', list_of_lines[i].strip('\n'), end='*')
+with open ('text.txt', 'r') as fopen:
+    list_of_lines = fopen.readlines()
+print(list_of_lines)
+print('--------------------------')
+
+#operuje juz tylko na zwyklej liscie
+for i in range(len(list_of_lines)):
+    print(f'Linia {i}:', list_of_lines[i].strip('\n'), end='*')
 
 # with open('save.txt', 'w') as f:
 #     f.write('Line 1\n')
